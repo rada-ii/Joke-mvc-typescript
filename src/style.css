@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Risque&display=swap");
+
+body,
+button {
+  font-family: "Risque", cursive;
+}
+
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#loader {
+  display: none;
+}
+
+.container {
+  /* max-width: 80%; */
+  height: 100dvh;
+  background-color: #363636;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.joke {
+  border: 1px solid #777;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  background-color: #cd30c0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+}
