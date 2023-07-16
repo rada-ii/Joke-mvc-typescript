@@ -1,6 +1,4 @@
-# Mvc-joke-ts
-
-# Marvel-mvc-typescript
+# Joke-mvc-typescript
 
 This is a simple Joke app that fetches programmers jokes from an API endpoint written in the Model-View-Controller (MVC) architecture and TypeScript. It's a personal practice project.
 
