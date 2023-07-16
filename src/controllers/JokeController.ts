@@ -13,10 +13,12 @@ export class JokeController {
   async getRandomJoke() {
     try {
       this.view.showLoader();
-      const response = await axios.get<Joke>(
+      const response = await axios.get<Joke[]>(
         "https://official-joke-api.appspot.com/jokes/programming/random"
       );
-      const joke = new Joke(response.data[0]);
+      const data = response.data[0];
+
+      const joke = new Joke(data);
       this.view.renderJoke(joke);
     } catch (error) {
       console.error(error);

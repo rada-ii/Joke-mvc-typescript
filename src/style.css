@@ -40,4 +40,11 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cd30f0;
+  color: #fff;
+  transition: all 0.2s;
 }

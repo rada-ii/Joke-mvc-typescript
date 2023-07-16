@@ -6,8 +6,8 @@ export class JokeView {
   private fetchButton: HTMLButtonElement;
 
   constructor() {
-    this.container = document.getElementById("joke-container");
-    this.loader = document.getElementById("loader");
+    this.container = document.getElementById("joke-container")!;
+    this.loader = document.getElementById("loader")!;
     this.fetchButton = document.getElementById(
       "fetch-button"
     ) as HTMLButtonElement;
@@ -17,7 +17,7 @@ export class JokeView {
     this.container.innerHTML = `
       <div class="joke">
         <p>${joke.setup}</p>
-        <p>${joke.punchline}</p>
+        <p>${joke.punchline} 🤣</p>
       </div>
     `;
   }
